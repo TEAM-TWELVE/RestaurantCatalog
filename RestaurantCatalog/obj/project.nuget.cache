@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "Db6IBi1G1ENVraPz2FjJ15HqYDELW7k9ZDKDX2kjS/UrkP8oaaoCsA5+xdytMJCwkWuKVs1fpKfyc1sqObrj5w==",
+  "dgSpecHash": "AH3bmz1nPFCUAoq8sAfi4T7i7+2R49C0o7SnVR+DCA0gQDJuUTBdbaHVdZ1M62VU7W1MtweUEXb/VJXVH/kE1w==",
   "success": true,
   "projectFilePath": "C:\\Users\\madsm\\source\\repos\\RestaurantCatalog\\RestaurantCatalog\\RestaurantCatalog.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\madsm\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.9\\microsoft.visualstudio.azure.containers.tools.targets.1.10.9.nupkg.sha512"
+    "C:\\Users\\madsm\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.9\\microsoft.visualstudio.azure.containers.tools.targets.1.10.9.nupkg.sha512",
+    "C:\\Users\\madsm\\.nuget\\packages\\newtonsoft.json\\11.0.1\\newtonsoft.json.11.0.1.nupkg.sha512"
   ],
   "logs": []
 }
