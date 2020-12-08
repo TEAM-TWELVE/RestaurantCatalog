@@ -7,7 +7,7 @@ namespace RestaurantCatalog.Model
 {
     public class Coordinates
     {
-        public double Lat { get; set; }
-        public double Lng { get; set; }
+        public string Lat { get; set; }
+        public string Lng { get; set; }
     }
 }

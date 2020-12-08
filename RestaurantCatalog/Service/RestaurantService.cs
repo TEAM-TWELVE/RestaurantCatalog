@@ -45,9 +45,9 @@ namespace RestaurantCatalog.Service
             ICollection<Restaurant> listToReturn = new List<Restaurant>();
             JObject restaurants = JsonConvert.DeserializeObject<dynamic>(json);
             var results = restaurants.SelectToken("results").ToList();
-            for (int i = 0; i < 3; i++)
+            for (int i = 0; i < results.Count && i < 3; i++)
             {
-                if (results[i] != null || results[i].HasValues)
+                if (null != results[i])
                 {
                     JObject restaurant = JsonConvert.DeserializeObject<dynamic>(results[i].ToString());
                     var address = (string)restaurant.SelectToken("vicinity");
@@ -55,6 +55,7 @@ namespace RestaurantCatalog.Service
                     var rating = (double)restaurant.SelectToken("rating");
                     listToReturn.Add(new Restaurant { Address = address, Name = name, Rating = rating });
                 }
+
             }
             return listToReturn;
         }
