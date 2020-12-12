@@ -28,11 +28,12 @@ namespace RestaurantCatalog.Controllers
         {
             return View();
         }
-        [HttpPost]
-        public async Task<ICollection<Restaurant>> Post([FromBody]ICollection<string> coordinates)
+        [HttpGet]
+        public async Task<IActionResult> Get([FromQuery]Coordinates coordinates)
         {
-            var coords = SplitCoords.SplitCoordinates(coordinates);
-            return await RestaurantService.GetRestaurants(coords);
+            //var coords = SplitCoords.SplitCoordinates(coordinates);
+            var result = await RestaurantService.GetRestaurants(coordinates);
+            return Ok(result);
         }
     }
 }

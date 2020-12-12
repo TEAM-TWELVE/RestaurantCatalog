@@ -17,27 +17,25 @@ namespace RestaurantCatalog.Service
         {
             Configuration = configuration;
         }
-        public async Task<ICollection<Restaurant>> GetRestaurants(ICollection<Coordinates> coords)
+        public async Task<ICollection<Restaurant>> GetRestaurants(Coordinates coords)
         {
             ICollection<Restaurant> restaurants = new List<Restaurant>();
             string apiKey = Configuration["ExternalProvides:Google:APIKey"];
 
-            foreach(var coord in coords)
+            using (HttpClient client = new HttpClient())
             {
-                using (HttpClient client = new HttpClient())
+                var response = await client.GetAsync(Configuration["APIEndpoints:Google:Places:RestaurantDiscoverer"] + coords.Lat + "," + coords.Lng + "&radius=2000&type=restaurant&key=" + apiKey);
+                if (response.IsSuccessStatusCode)
                 {
-                    var response = await client.GetAsync(Configuration["APIEndpoints:Google:Places:RestaurantDiscoverer"] + coord.Lat + "," + coord.Lng + "&radius=2000&type=restaurant&key=" + apiKey);
-                    if (response.IsSuccessStatusCode)
-                    {
-                        var content = await response.Content.ReadAsStringAsync();
-                        restaurants = GetRestaurantFromJson(content);
-                    }
-                    else
-                    {
-                        throw new HttpRequestException("Couldn't get response... StatusCode: " + response.StatusCode);
-                    }
+                    var content = await response.Content.ReadAsStringAsync();
+                    restaurants = GetRestaurantFromJson(content);
+                }
+                else
+                {
+                    throw new HttpRequestException("Couldn't get response... StatusCode: " + response.StatusCode);
                 }
             }
+
             return restaurants;
         }
         private ICollection<Restaurant> GetRestaurantFromJson(string json)

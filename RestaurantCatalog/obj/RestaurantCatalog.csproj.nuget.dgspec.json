@@ -1,21 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\madsm\\source\\repos\\RestaurantCatalog\\RestaurantCatalog\\RestaurantCatalog.csproj": {}
+    "C:\\Users\\Highyard\\Source\\Repos\\ResaurantCatalog\\RestaurantCatalog\\RestaurantCatalog.csproj": {}
   },
   "projects": {
-    "C:\\Users\\madsm\\source\\repos\\RestaurantCatalog\\RestaurantCatalog\\RestaurantCatalog.csproj": {
+    "C:\\Users\\Highyard\\Source\\Repos\\ResaurantCatalog\\RestaurantCatalog\\RestaurantCatalog.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\madsm\\source\\repos\\RestaurantCatalog\\RestaurantCatalog\\RestaurantCatalog.csproj",
+        "projectUniqueName": "C:\\Users\\Highyard\\Source\\Repos\\ResaurantCatalog\\RestaurantCatalog\\RestaurantCatalog.csproj",
         "projectName": "RestaurantCatalog",
-        "projectPath": "C:\\Users\\madsm\\source\\repos\\RestaurantCatalog\\RestaurantCatalog\\RestaurantCatalog.csproj",
-        "packagesPath": "C:\\Users\\madsm\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\madsm\\source\\repos\\RestaurantCatalog\\RestaurantCatalog\\obj\\",
+        "projectPath": "C:\\Users\\Highyard\\Source\\Repos\\ResaurantCatalog\\RestaurantCatalog\\RestaurantCatalog.csproj",
+        "packagesPath": "C:\\Users\\Highyard\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Highyard\\Source\\Repos\\ResaurantCatalog\\RestaurantCatalog\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\madsm\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Highyard\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -26,7 +31,6 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -38,7 +42,6 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
               "target": "Package",
@@ -67,7 +70,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

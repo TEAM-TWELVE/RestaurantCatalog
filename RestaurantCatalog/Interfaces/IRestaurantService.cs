@@ -8,6 +8,6 @@ namespace RestaurantCatalog.Interfaces
 {
     public interface IRestaurantService
     {
-        Task<ICollection<Restaurant>> GetRestaurants(ICollection<Coordinates> coords);
+        Task<ICollection<Restaurant>> GetRestaurants(Coordinates coords);
     }
 }
