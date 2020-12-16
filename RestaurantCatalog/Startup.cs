@@ -39,9 +39,7 @@ namespace RestaurantCatalog
             {
                 app.UseDeveloperExceptionPage();
             }
-            app.UseCors(x => x.WithOrigins("http://localhost:5000/").AllowAnyMethod().AllowAnyHeader().AllowCredentials());
-
-            app.UseHttpsRedirection();
+            app.UseCors(x => x.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
 
             app.UseRouting();
 
