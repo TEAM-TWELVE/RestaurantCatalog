@@ -15,6 +15,7 @@ namespace RestaurantCatalog.Controllers
     [ApiController]
     public class RestaurantController : Controller
     {
+        private Logger _logger = new Logger("RestaurantController");
         public IConfiguration Configuration { get; private set; }
         public IRestaurantService RestaurantService { get; private set; }
        
@@ -31,8 +32,10 @@ namespace RestaurantCatalog.Controllers
         [HttpGet]
         public async Task<IActionResult> Get([FromQuery]Coordinates coordinates)
         {
+            _logger.Info("/ GET Get called.");
             //var coords = SplitCoords.SplitCoordinates(coordinates);
             var result = await RestaurantService.GetRestaurants(coordinates);
+            _logger.Info("/ GET successfully finished.");
             return Ok(result);
         }
     }

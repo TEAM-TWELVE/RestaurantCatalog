@@ -1,0 +1,21 @@
+15-12-2020 16:24:13 INFO    RestaurantController - / GET Get called.
+15-12-2020 16:24:13 INFO    RestaurantService - GetRestaurants() called.
+15-12-2020 16:24:13 INFO    RestaurantService - Successfully entered using block with HttpClient initialization.
+15-12-2020 16:24:14 INFO    RestaurantService - Status code was OK
+15-12-2020 16:24:14 INFO    RestaurantService - GetRestaurantFromJson() called.
+15-12-2020 16:24:14 INFO    RestaurantService - Deserialized json into JObject.
+15-12-2020 16:24:14 INFO    RestaurantService - Inside fori-loop with index: 0
+15-12-2020 16:24:14 INFO    RestaurantService - JToken on index 0was NOT null.
+15-12-2020 16:24:14 INFO    RestaurantService - Read all values from JToken into local variables.
+15-12-2020 16:24:14 INFO    RestaurantService - Added new Restaurant instance to List<Restaurant>.
+15-12-2020 16:24:14 INFO    RestaurantService - Inside fori-loop with index: 1
+15-12-2020 16:24:14 INFO    RestaurantService - JToken on index 1was NOT null.
+15-12-2020 16:24:14 INFO    RestaurantService - Read all values from JToken into local variables.
+15-12-2020 16:24:14 INFO    RestaurantService - Added new Restaurant instance to List<Restaurant>.
+15-12-2020 16:24:14 INFO    RestaurantService - Inside fori-loop with index: 2
+15-12-2020 16:24:14 INFO    RestaurantService - JToken on index 2was NOT null.
+15-12-2020 16:24:14 INFO    RestaurantService - Read all values from JToken into local variables.
+15-12-2020 16:24:14 INFO    RestaurantService - Added new Restaurant instance to List<Restaurant>.
+15-12-2020 16:24:14 INFO    RestaurantService - Exiting GetRestaurantFromJson()
+15-12-2020 16:24:14 INFO    RestaurantService - Exiting GetRestaurants()
+15-12-2020 16:24:14 INFO    RestaurantController - / GET successfully finished.
